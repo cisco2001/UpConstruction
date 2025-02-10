@@ -528,7 +528,37 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
+   <script>
+        const fadeDuration = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
+        const startKey = "darknessStartTime";
 
+        function getDarknessLevel() {
+            let startTime = localStorage.getItem(startKey);
+
+            if (!startTime) {
+                // First visit: store current time
+                startTime = Date.now();
+                localStorage.setItem(startKey, startTime);
+            } else {
+                startTime = parseInt(startTime, 10);
+            }
+
+            // Calculate time elapsed
+            const elapsed = Date.now() - startTime;
+            let progress = elapsed / fadeDuration; // Normalize (0 to 1)
+            if (progress > 1) progress = 1; // Cap at full darkness
+
+            return progress;
+        }
+
+        function applyDarkness() {
+            const darkness = getDarknessLevel();
+            document.body.style.backgroundColor = `rgba(0, 0, 0, ${darkness})`;
+            document.body.style.color = `rgba(${255 * (1 - darkness)}, ${255 * (1 - darkness)}, ${255 * (1 - darkness)}, 1)`;
+        }
+
+        applyDarkness();
+    </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
