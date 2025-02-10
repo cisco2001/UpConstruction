@@ -47,6 +47,18 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+   margin: 0;
+   padding: 0;
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-size: 2rem;
+            transition: background-color 1s linear, color 1s linear;
 }
 
 a {
