@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - You Are Lost!</title>
+    <title>404 - WE SCAMMED YOU!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@
         }
         h1 {
             font-size: 50px;
-            animation: shake 0.5s infinite;
+            animation: shake 0.2s infinite;
             position: relative;
         }
         @keyframes shake {
@@ -25,25 +25,17 @@
             75% { transform: translate(-2px, 2px) rotate(0deg); }
             100% { transform: translate(2px, 2px) rotate(0deg); }
         }
-        .loading {
+        .warning {
             font-size: 20px;
-            opacity: 1;
-            animation: fadeOut 5s infinite;
-        }
-        @keyframes fadeOut {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-        .links a {
-            color: cyan;
-            font-size: 20px;
-            text-decoration: none;
-            margin: 10px;
+            background: yellow;
+            color: black;
+            padding: 10px;
             display: inline-block;
+            animation: flicker 0.5s infinite alternate;
         }
-        .links a:hover {
-            text-decoration: underline;
+        @keyframes flicker {
+            0% { opacity: 1; }
+            100% { opacity: 0.1; }
         }
         .fake-btn {
             background: red;
@@ -59,47 +51,40 @@
 <body>
 
     <audio id="siren" autoplay loop>
-        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+        <source src="https://www.soundjay.com/button/beep-09.wav" type="audio/wav">
     </audio>
 
-    <h1>404 ERROR - YOU ARE LOST!</h1>
-    <p class="loading">Fixing the issue... Please wait...</p>
+    <h1>⚠️ 404 ERROR - WE SCAMMED YOU! ⚠️</h1>
+    <p class="warning">WARNING: Your device may be at risk! 🤡</p>
     
-    <div class="links">
-        <a href="#">Try Again</a>
-        <a href="#">Go Back</a>
-        <a href="#">Click Here</a>
-    </div>
-
-    <button class="fake-btn" onclick="refreshPage()">Click to Fix (Does Nothing)</button>
+    <button class="fake-btn" onclick="fakeFix()">Click to Fix (DOES NOTHING)</button>
 
     <script>
-        // Play sound on loop
+        // Play annoying sound
         document.addEventListener("DOMContentLoaded", () => {
             let siren = document.getElementById("siren");
-            siren.volume = 0.5; // Adjust volume
+            siren.volume = 1.0;
             siren.play();
         });
 
-        // Fake refresh button
-        function refreshPage() {
-            alert("Still broken! Try harder!");
+        // Fake fix button
+        function fakeFix() {
+            alert("HAHA! YOU THOUGHT THIS WOULD HELP?");
+            alert("NO ESCAPE! ERROR IS FOREVER!");
             location.reload();
         }
 
-        // Random pop-ups
+        // Annoying pop-ups
         setInterval(() => {
-            alert("Are you lost? 🤡");
-        }, 8000); // Every 8 seconds
+            alert("SYSTEM WARNING: Suspicious Activity Detected!");
+            alert("Your IP has been logged! 🤡");
+            alert("Send $500 to remove this error! 💰");
+        }, 2000); // Every 2 seconds
 
-        // Fake loading text
+        // Auto-reload every 10 seconds
         setTimeout(() => {
-            document.querySelector(".loading").textContent = "Still Fixing... Hold On...";
-        }, 3000);
-
-        setTimeout(() => {
-            document.querySelector(".loading").textContent = "Just Kidding! You're stuck!";
-        }, 6000);
+            location.reload();
+        }, 10000);
     </script>
 
 </body>
