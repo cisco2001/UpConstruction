@@ -1,577 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Plateau Construction Ltd</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <meta name="google-site-verification" content="7w-qV_n__rze751YEugShgT8ZJSXagZKWc9LDNb2rag" />
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - You Are Lost!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: red;
+            text-align: center;
+            margin: 0;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 50px;
+            animation: shake 0.5s infinite;
+            position: relative;
+        }
+        @keyframes shake {
+            0% { transform: translate(2px, 2px) rotate(0deg); }
+            25% { transform: translate(-2px, -2px) rotate(-1deg); }
+            50% { transform: translate(2px, -2px) rotate(1deg); }
+            75% { transform: translate(-2px, 2px) rotate(0deg); }
+            100% { transform: translate(2px, 2px) rotate(0deg); }
+        }
+        .loading {
+            font-size: 20px;
+            opacity: 1;
+            animation: fadeOut 5s infinite;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .links a {
+            color: cyan;
+            font-size: 20px;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .fake-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            animation: shake 0.3s infinite;
+        }
+    </style>
 </head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">Plateau Construction</h1> <span>.</span>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li class="dropdown"><a href="#"><span>Careers</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Job</a></li>
-              <li><a href="#">Internship</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="info d-flex align-items-center">
-        <div class="container">
-          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-6 text-center">
-              <h2>Welcome to Plateau Construction</h2>
-              <p><strong>Your trusted partner in innovative construction and engineering solutions. We bring dreams to life, transforming ideas into enduring structures that stand as a testament to our commitment to excellence.</strong></p>
-              <a href="#get-started" class="btn-get-started">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
-        </div>
-
-        <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-4.jpg" alt="">
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-5.jpg" alt="">
-        </div>
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
-      </div>
-
-    </section><!-- /Hero Section -->
-
-     <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <div class="container">
-
-        <ul class="nav nav-tabs row  g-2 d-flex" data-aos="fade-up" data-aos-delay="100" role="tablist">
-
-          <li class="nav-item col-3" role="presentation">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" aria-selected="true" role="tab">
-              <h4>OUR VISION</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item col-3" role="presentation">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" aria-selected="false" tabindex="-1" role="tab">
-              <h4>Excellency</h4>
-            </a><!-- End tab nav item -->
-
-          </li>
-          <li class="nav-item col-3" role="presentation">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" aria-selected="false" tabindex="-1" role="tab">
-              <h4>Technology</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item col-3" role="presentation">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4" aria-selected="false" tabindex="-1" role="tab">
-              <h4>Sustainability</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-        </ul>
-
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>We Believe in and Promote Quality Delivery.</h3>
-                <p class="fst-italic">
-                We are unwaveringly committed to delivering the highest standard of construction expertise and service.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>From individuals to international institutions, our client base reflects the trust placed in our capabilities across various sectors.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span> We understand the dynamic nature of projects. Our adaptive approach ensures flexibility in meeting evolving client needs.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Our commitment to cost-effectiveness doesn't compromise the quality of our work. We strive for excellence in every aspect of construction..</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-1.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Empowering Visions, Building Excellence.</h3>
-                <p class="fst-italic">
-                  Every client that gives Plateau a chance to serve them will be received with high end customer care, listened to their needs and problems attentively; our team will offer the best solution with consideration to client needs, resources and engineering perspective.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> <span> Our services are customized to meet the specific needs of individuals, private organizations, international entities, and public institutions.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>We employ a holistic approach to engineering, seamlessly integrating various disciplines to deliver well-rounded solutions.</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-2.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Innovative Engineering and Construction Solutions Tailored to Your Needs</h3>
-
-                 <p class="fst-italic">
-                 We employ the use of modern and effective technology in all our projects, by combining it and relevant experience we ensure timely delivery of quality results and projects. We have efficient equipment and are always ready to acquire  extra hand whenever necessary.
-                </p>
-
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>We leverage modern and effective technology in all our projects, ensuring high-quality results and efficiency.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Our team combines extensive industry experience with innovative techniques to deliver exceptional outcomes.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Committed to meeting deadlines, we ensure the timely completion of projects without compromising quality.</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane fade" id="features-tab-4" role="tabpanel">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Sustainable Construction Solutions for a Greener Future</h3>
-                <p class="fst-italic">
-                 We take a proactive role in environmental conservation, setting industry standards for sustainability and responsible building.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>We are dedicated to championing environmental conservation and integrating green technology into all our projects.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>We actively participate in projects that promote environmental preservation, contributing to a healthier planet.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Leading in proper waste management, we ensure that our construction processes minimize waste and maximize recycling.</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-4.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Features Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p> We offer a comprehensive range of engineering and construction services, tailored to meet the diverse needs of our clients. Our commitment to quality, innovation, and sustainability ensures that every project we undertake is a success.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-mountain-city"></i>
-              </div>
-              <h3>STRUCTURAL AND ARCHITECTURAL DESIGN</h3>
-              <p>We create architectural designs that are not only visually stunning but also highly functional. Our architects are adept at crafting spaces that enhance usability while maintaining aesthetic integrity. We consider factors such as lighting, space planning, and material selection to create harmonious environments.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3>CONSTRUCTION OF STRUCTURES</h3>
-              <p>we specialize in constructing high-quality residential, commercial, industrial, and institutional structures, integrating sustainable practices and advanced technology to ensure every project meets the highest standards of quality, safety, and environmental responsibility. Our comprehensive services cover new builds, renovations, and infrastructure projects, all managed with meticulous attention to detail and a commitment to excellence. </p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-compass-drafting"></i>
-              </div>
-              <h3>EARTHWORK AND HIGHWAY</h3>
-              <p>We specialize in comprehensive earthwork and highway construction services, delivering robust infrastructure that supports safe and efficient transportation. Our expertise encompasses site preparation, excavation, grading, and the construction of highways, roads, and bridges. Utilizing advanced technology and sustainable practices, we ensure precision and efficiency in every project</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-trowel-bricks"></i>
-              </div>
-              <h3>RENOVATIONS AND REHABILITATION WORKS</h3>
-              <p>We specialize in comprehensive renovations and rehabilitation works that breathe new life into existing structures while preserving their historical and architectural integrity. Our expert team excels in transforming spaces through thoughtful design and meticulous craftsmanship, whether it's updating outdated interiors, restoring heritage buildings, or enhancing functionality for modern needs</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-helmet-safety"></i>
-              </div>
-              <h3>Construction Project Management</h3>
-              <p>We provide end-to-end construction management services, overseeing every phase of your project to ensure timely completion and adherence to budget. From initial planning to final execution, our experienced project managers handle it all.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3>STRUCTURE INVESTIGATIONS, TESTING AND SURVEY.</h3>
-              <p>we offer expert structure investigations, testing, and survey services to ensure the integrity, safety, and longevity of your construction projects. Our team uses advanced techniques and state-of-the-art equipment to conduct thorough assessments of existing structures, including non-destructive testing, material analysis, and structural health monitoring. We provide detailed surveys and reports that inform maintenance, renovation, and compliance with industry standards. Whether for new construction, existing buildings, or infrastructure, our meticulous approach guarantees accurate diagnostics and reliable solutions, enhancing the safety and performance of your structures.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-        <p>Explore our project showcase, where our commitment to excellence, innovation, and sustainability shines through.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-remodeling">Earthwork</li>
-            <li data-filter=".filter-construction">Construction</li>
-            <li data-filter=".filter-repairs">Renovation</li>
-            <li data-filter=".filter-design">Design</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-remodeling">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/remodeling-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Dismantling the scaffolding used in the Silo Maintenance.</p>
-                  <a href="assets/img/projects/remodeling-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Building of classes buildings at Kijitonyama secondary school.</p>
-                  <a href="assets/img/projects/construction-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-repairs">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/repairs-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Building of classes buildings at Kijitonyama secondary school</p>
-                  <a href="assets/img/projects/repairs-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <a href="assets/img/projects/design-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-remodeling">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/remodeling-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Structural investigation of a concrete silo at Dangote Cement Industry in Mtwara</p>
-                  <a href="assets/img/projects/remodeling-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <a href="assets/img/projects/construction-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-repairs">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/repairs-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Construction of classes building at Makumbusho secondary school</p>
-                  <a href="assets/img/projects/repairs-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Trench excavation</p>
-                  <a href="assets/img/projects/design-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-remodeling">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/remodeling-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Dismantling the scaffolding used in the Silo Maintenance.</p>
-                  <a href="assets/img/projects/remodeling-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Steel Reinforcements fixing at Kawe Site. </p>
-                  <a href="assets/img/projects/construction-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-repairs">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/repairs-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Excavation of Recreational water reservoir in Goba madale.</p>
-
-                  <a href="assets/img/projects/repairs-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <a href="assets/img/projects/design-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Projects Section -->
-
-  </main>
-
-  <footer id="footer" class="footer">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Plateau Construction Ltd</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Plot 25, Mori Street, Sinza A,</p>
-            <p>Dar es Salaam, Tanzania</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+255 759 198 831</span></p>
-            <p><strong>Email:</strong> <span>plateauconstructionltd@gmail.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-      </div>
+<body>
+
+    <audio id="siren" autoplay loop>
+        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+    </audio>
+
+    <h1>404 ERROR - YOU ARE LOST!</h1>
+    <p class="loading">Fixing the issue... Please wait...</p>
+    
+    <div class="links">
+        <a href="#">Try Again</a>
+        <a href="#">Go Back</a>
+        <a href="#">Click Here</a>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Plateau Construction Ltd</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="mailto:festosidon@gmail.com">Festo Sidon</a>
-      </div>
-    </div>
+    <button class="fake-btn" onclick="refreshPage()">Click to Fix (Does Nothing)</button>
 
-  </footer>
+    <script>
+        // Play sound on loop
+        document.addEventListener("DOMContentLoaded", () => {
+            let siren = document.getElementById("siren");
+            siren.volume = 0.5; // Adjust volume
+            siren.play();
+        });
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-   <script>
-        const fadeDuration = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
-        const startKey = "darknessStartTime";
-
-        function getDarknessLevel() {
-            let startTime = localStorage.getItem(startKey);
-
-            if (!startTime) {
-                // First visit: store current time
-                startTime = Date.now();
-                localStorage.setItem(startKey, startTime);
-            } else {
-                startTime = parseInt(startTime, 10);
-            }
-
-            // Calculate time elapsed
-            const elapsed = Date.now() - startTime;
-            let progress = elapsed / fadeDuration; // Normalize (0 to 1)
-            if (progress > 1) progress = 1; // Cap at full darkness
-
-            return progress;
+        // Fake refresh button
+        function refreshPage() {
+            alert("Still broken! Try harder!");
+            location.reload();
         }
 
-        function applyDarkness() {
-            const darkness = getDarknessLevel();
-            document.body.style.backgroundColor = `rgba(0, 0, 0, ${darkness})`;
-            document.body.style.color = `rgba(${255 * (1 - darkness)}, ${255 * (1 - darkness)}, ${255 * (1 - darkness)}, 1)`;
-        }
+        // Random pop-ups
+        setInterval(() => {
+            alert("Are you lost? 🤡");
+        }, 8000); // Every 8 seconds
 
-        applyDarkness();
+        // Fake loading text
+        setTimeout(() => {
+            document.querySelector(".loading").textContent = "Still Fixing... Hold On...";
+        }, 3000);
+
+        setTimeout(() => {
+            document.querySelector(".loading").textContent = "Just Kidding! You're stuck!";
+        }, 6000);
     </script>
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
